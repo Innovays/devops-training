@@ -22,13 +22,13 @@ CircleCI
 # Tasks:
 In this project, I completed the following tasks:
 
-* Tested the project code using linting
-* Completed a Dockerfile to containerize the application
-* Deployed the containerized application using Docker and made a prediction
-* Improved the log statements in the source code for this application
-* Configured Kubernetes and created a Kubernetes cluster
-* Deployed a container using Kubernetes and made a prediction
-* Uploaded a complete Github repo with CircleCI to indicate that the code has been tested
+* (+) Tested the project code using linting
+* (+) Completed a Dockerfile to containerize the application
+* (+) Deployed the containerized application using Docker and made a prediction
+* (+) Improved the log statements in the source code for this application
+* (-) Configured Kubernetes and created a Kubernetes cluster
+* (-) Deployed a container using Kubernetes and made a prediction
+* (-) Uploaded a complete Github repo with CircleCI to indicate that the code has been tested
 
 # How to Setup the Environment:
 
