@@ -42,12 +42,16 @@ In this project, I completed the following tasks:
       $  python3 -m pip install --no-cache-dir -r requirements.txt 
 * Run "make lint" to check for linting errors.
 
+# Set the Environment-Variables
+* Adjust the ".env"-file 
+
+
 # Running in Docker:
 
 * Run "./run_docker.sh" to start the docker container and create the Flask app within the container.
 * Run "./make_prediction.sh" to make predictions.
 
-Running in Kubernetes Cluster:
+# Running in Kubernetes Cluster:
 
 Install Minikube and Virtualbox.
 * Run "minikube start" to start a local cluster.
