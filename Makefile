@@ -12,11 +12,15 @@ setup:
 
 install:
 	# This should be run from inside a virtualenv
-	pip install --upgrade pip &&\
-		pip install --no-cache-dir -r requirements.txt &&\
-	sudo curl -L https://github.com/hadolint/hadolint/releases/download/v2.10.0/hadolint-Linux-x86_64 -o /bin/hadolint &&\
-	sudo chmod +x /bin/hadolint
-
+        pip install --upgrade pip &&\
+            pip install --no-cache-dir -r requirements.txt &&\
+            if command -v sudo >/dev/null 2>&1; then \
+                sudo curl -L https://github.com/hadolint/hadolint/releases/download/v2.10.0/hadolint-Linux-x86_64 -o /bin/hadolint &&\
+                sudo chmod +x /bin/hadolint; \
+            else \
+                curl -L https://github.com/hadolint/hadolint/releases/download/v2.10.0/hadolint-Linux-x86_64 -o /bin/hadolint &&\
+                chmod +x /bin/hadolint; \
+            fi
 test:
 	# Additional, optional, tests could go here
 	#python -m pytest -vv --cov=myrepolib tests/*.py
